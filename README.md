@@ -28,28 +28,36 @@ A client‑server Rock‑Paper‑Scissors game implemented in Python using Tkint
 
 ## Project Structure
 
+```
 ├── README.md
 ├── client.py              # Client GUI application
 ├── server.py              # Server GUI application
 ├── game_logic.py          # Commit‑reveal and winner logic
 └── network.py             # TCP networking utilities
+```
 
 ## Installation & Setup
 
 1. **Clone the repository**
 
+   ```bash
    git clone <repository-url>
    cd <repository-directory>
+   ```
 
 2. **Ensure Python 3 is installed**
 
+   ```bash
    python3 --version
+   ```
 
 3. **(Optional) Create and activate a virtual environment**
 
+   ```bash
    python3 -m venv venv
    source venv/bin/activate  # macOS/Linux
    venv\\Scripts\\activate  # Windows
+   ```
 
 ## Usage
 
@@ -57,7 +65,9 @@ A client‑server Rock‑Paper‑Scissors game implemented in Python using Tkint
 
 In one terminal, start the server GUI:
 
+```bash
 python3 server.py
+```
 
 * The server listens on all interfaces (`0.0.0.0`) at port `5000` by default.
 * The window will show “Starting server...” then “Waiting for client to connect….”
@@ -66,7 +76,9 @@ python3 server.py
 
 In another terminal (same machine or different), start the client GUI:
 
+```bash
 python3 client.py
+```
 
 * By default, the client connects to `127.0.0.1:5000`.
 * The window will show “Connecting to server…” then “Connected to server. Waiting for commit…”
